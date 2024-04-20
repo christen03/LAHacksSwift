@@ -1,0 +1,1026 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA2866642BD3AA9400DFE412 /* ClimaxAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2866632BD3AA9400DFE412 /* ClimaxAppApp.swift */; };
+		CA2866662BD3AA9400DFE412 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2866652BD3AA9400DFE412 /* ContentView.swift */; };
+		CA2866682BD3AA9700DFE412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA2866672BD3AA9700DFE412 /* Assets.xcassets */; };
+		CA28666B2BD3AA9700DFE412 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA28666A2BD3AA9700DFE412 /* Preview Assets.xcassets */; };
+		CA2866752BD3AA9700DFE412 /* ClimaxAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2866742BD3AA9700DFE412 /* ClimaxAppTests.swift */; };
+		CA28667F2BD3AA9700DFE412 /* ClimaxAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA28667E2BD3AA9700DFE412 /* ClimaxAppUITests.swift */; };
+		CA2866812BD3AA9700DFE412 /* ClimaxAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2866802BD3AA9700DFE412 /* ClimaxAppUITestsLaunchTests.swift */; };
+		CA2866872BD3AA9700DFE412 /* ClimaxApp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CA2866862BD3AA9700DFE412 /* ClimaxApp Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CA28668C2BD3AA9700DFE412 /* ClimaxAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA28668B2BD3AA9700DFE412 /* ClimaxAppApp.swift */; };
+		CA28668E2BD3AA9700DFE412 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA28668D2BD3AA9700DFE412 /* ContentView.swift */; };
+		CA2866902BD3AA9800DFE412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA28668F2BD3AA9800DFE412 /* Assets.xcassets */; };
+		CA2866932BD3AA9800DFE412 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA2866922BD3AA9800DFE412 /* Preview Assets.xcassets */; };
+		CA28669D2BD3AA9800DFE412 /* ClimaxApp_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA28669C2BD3AA9800DFE412 /* ClimaxApp_Watch_AppTests.swift */; };
+		CA2866A72BD3AA9800DFE412 /* ClimaxApp_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2866A62BD3AA9800DFE412 /* ClimaxApp_Watch_AppUITests.swift */; };
+		CA2866A92BD3AA9800DFE412 /* ClimaxApp_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2866A82BD3AA9800DFE412 /* ClimaxApp_Watch_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA2866712BD3AA9700DFE412 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA2866582BD3AA9400DFE412 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA28665F2BD3AA9400DFE412;
+			remoteInfo = ClimaxApp;
+		};
+		CA28667B2BD3AA9700DFE412 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA2866582BD3AA9400DFE412 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA28665F2BD3AA9400DFE412;
+			remoteInfo = ClimaxApp;
+		};
+		CA2866882BD3AA9700DFE412 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA2866582BD3AA9400DFE412 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA2866852BD3AA9700DFE412;
+			remoteInfo = "ClimaxApp Watch App";
+		};
+		CA2866992BD3AA9800DFE412 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA2866582BD3AA9400DFE412 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA2866852BD3AA9700DFE412;
+			remoteInfo = "ClimaxApp Watch App";
+		};
+		CA2866A32BD3AA9800DFE412 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA2866582BD3AA9400DFE412 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA2866852BD3AA9700DFE412;
+			remoteInfo = "ClimaxApp Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA2866AF2BD3AA9800DFE412 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CA2866872BD3AA9700DFE412 /* ClimaxApp Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CA2866602BD3AA9400DFE412 /* ClimaxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClimaxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA2866632BD3AA9400DFE412 /* ClimaxAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaxAppApp.swift; sourceTree = "<group>"; };
+		CA2866652BD3AA9400DFE412 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CA2866672BD3AA9700DFE412 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA28666A2BD3AA9700DFE412 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA2866702BD3AA9700DFE412 /* ClimaxAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimaxAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA2866742BD3AA9700DFE412 /* ClimaxAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaxAppTests.swift; sourceTree = "<group>"; };
+		CA28667A2BD3AA9700DFE412 /* ClimaxAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimaxAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA28667E2BD3AA9700DFE412 /* ClimaxAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaxAppUITests.swift; sourceTree = "<group>"; };
+		CA2866802BD3AA9700DFE412 /* ClimaxAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaxAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CA2866862BD3AA9700DFE412 /* ClimaxApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ClimaxApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA28668B2BD3AA9700DFE412 /* ClimaxAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaxAppApp.swift; sourceTree = "<group>"; };
+		CA28668D2BD3AA9700DFE412 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CA28668F2BD3AA9800DFE412 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA2866922BD3AA9800DFE412 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA2866982BD3AA9800DFE412 /* ClimaxApp Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ClimaxApp Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA28669C2BD3AA9800DFE412 /* ClimaxApp_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaxApp_Watch_AppTests.swift; sourceTree = "<group>"; };
+		CA2866A22BD3AA9800DFE412 /* ClimaxApp Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ClimaxApp Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA2866A62BD3AA9800DFE412 /* ClimaxApp_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaxApp_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		CA2866A82BD3AA9800DFE412 /* ClimaxApp_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaxApp_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA28665D2BD3AA9400DFE412 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA28666D2BD3AA9700DFE412 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2866772BD3AA9700DFE412 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2866832BD3AA9700DFE412 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2866952BD3AA9800DFE412 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA28669F2BD3AA9800DFE412 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA2866572BD3AA9400DFE412 = {
+			isa = PBXGroup;
+			children = (
+				CA2866622BD3AA9400DFE412 /* ClimaxApp */,
+				CA2866732BD3AA9700DFE412 /* ClimaxAppTests */,
+				CA28667D2BD3AA9700DFE412 /* ClimaxAppUITests */,
+				CA28668A2BD3AA9700DFE412 /* ClimaxApp Watch App */,
+				CA28669B2BD3AA9800DFE412 /* ClimaxApp Watch AppTests */,
+				CA2866A52BD3AA9800DFE412 /* ClimaxApp Watch AppUITests */,
+				CA2866612BD3AA9400DFE412 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA2866612BD3AA9400DFE412 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA2866602BD3AA9400DFE412 /* ClimaxApp.app */,
+				CA2866702BD3AA9700DFE412 /* ClimaxAppTests.xctest */,
+				CA28667A2BD3AA9700DFE412 /* ClimaxAppUITests.xctest */,
+				CA2866862BD3AA9700DFE412 /* ClimaxApp Watch App.app */,
+				CA2866982BD3AA9800DFE412 /* ClimaxApp Watch AppTests.xctest */,
+				CA2866A22BD3AA9800DFE412 /* ClimaxApp Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA2866622BD3AA9400DFE412 /* ClimaxApp */ = {
+			isa = PBXGroup;
+			children = (
+				CA2866632BD3AA9400DFE412 /* ClimaxAppApp.swift */,
+				CA2866652BD3AA9400DFE412 /* ContentView.swift */,
+				CA2866672BD3AA9700DFE412 /* Assets.xcassets */,
+				CA2866692BD3AA9700DFE412 /* Preview Content */,
+			);
+			path = ClimaxApp;
+			sourceTree = "<group>";
+		};
+		CA2866692BD3AA9700DFE412 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CA28666A2BD3AA9700DFE412 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CA2866732BD3AA9700DFE412 /* ClimaxAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA2866742BD3AA9700DFE412 /* ClimaxAppTests.swift */,
+			);
+			path = ClimaxAppTests;
+			sourceTree = "<group>";
+		};
+		CA28667D2BD3AA9700DFE412 /* ClimaxAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA28667E2BD3AA9700DFE412 /* ClimaxAppUITests.swift */,
+				CA2866802BD3AA9700DFE412 /* ClimaxAppUITestsLaunchTests.swift */,
+			);
+			path = ClimaxAppUITests;
+			sourceTree = "<group>";
+		};
+		CA28668A2BD3AA9700DFE412 /* ClimaxApp Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				CA28668B2BD3AA9700DFE412 /* ClimaxAppApp.swift */,
+				CA28668D2BD3AA9700DFE412 /* ContentView.swift */,
+				CA28668F2BD3AA9800DFE412 /* Assets.xcassets */,
+				CA2866912BD3AA9800DFE412 /* Preview Content */,
+			);
+			path = "ClimaxApp Watch App";
+			sourceTree = "<group>";
+		};
+		CA2866912BD3AA9800DFE412 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CA2866922BD3AA9800DFE412 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CA28669B2BD3AA9800DFE412 /* ClimaxApp Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA28669C2BD3AA9800DFE412 /* ClimaxApp_Watch_AppTests.swift */,
+			);
+			path = "ClimaxApp Watch AppTests";
+			sourceTree = "<group>";
+		};
+		CA2866A52BD3AA9800DFE412 /* ClimaxApp Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA2866A62BD3AA9800DFE412 /* ClimaxApp_Watch_AppUITests.swift */,
+				CA2866A82BD3AA9800DFE412 /* ClimaxApp_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "ClimaxApp Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA28665F2BD3AA9400DFE412 /* ClimaxApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA2866B02BD3AA9800DFE412 /* Build configuration list for PBXNativeTarget "ClimaxApp" */;
+			buildPhases = (
+				CA28665C2BD3AA9400DFE412 /* Sources */,
+				CA28665D2BD3AA9400DFE412 /* Frameworks */,
+				CA28665E2BD3AA9400DFE412 /* Resources */,
+				CA2866AF2BD3AA9800DFE412 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA2866892BD3AA9700DFE412 /* PBXTargetDependency */,
+			);
+			name = ClimaxApp;
+			productName = ClimaxApp;
+			productReference = CA2866602BD3AA9400DFE412 /* ClimaxApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA28666F2BD3AA9700DFE412 /* ClimaxAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA2866B32BD3AA9800DFE412 /* Build configuration list for PBXNativeTarget "ClimaxAppTests" */;
+			buildPhases = (
+				CA28666C2BD3AA9700DFE412 /* Sources */,
+				CA28666D2BD3AA9700DFE412 /* Frameworks */,
+				CA28666E2BD3AA9700DFE412 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA2866722BD3AA9700DFE412 /* PBXTargetDependency */,
+			);
+			name = ClimaxAppTests;
+			productName = ClimaxAppTests;
+			productReference = CA2866702BD3AA9700DFE412 /* ClimaxAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA2866792BD3AA9700DFE412 /* ClimaxAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA2866B62BD3AA9800DFE412 /* Build configuration list for PBXNativeTarget "ClimaxAppUITests" */;
+			buildPhases = (
+				CA2866762BD3AA9700DFE412 /* Sources */,
+				CA2866772BD3AA9700DFE412 /* Frameworks */,
+				CA2866782BD3AA9700DFE412 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA28667C2BD3AA9700DFE412 /* PBXTargetDependency */,
+			);
+			name = ClimaxAppUITests;
+			productName = ClimaxAppUITests;
+			productReference = CA28667A2BD3AA9700DFE412 /* ClimaxAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CA2866852BD3AA9700DFE412 /* ClimaxApp Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA2866AC2BD3AA9800DFE412 /* Build configuration list for PBXNativeTarget "ClimaxApp Watch App" */;
+			buildPhases = (
+				CA2866822BD3AA9700DFE412 /* Sources */,
+				CA2866832BD3AA9700DFE412 /* Frameworks */,
+				CA2866842BD3AA9700DFE412 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ClimaxApp Watch App";
+			productName = "ClimaxApp Watch App";
+			productReference = CA2866862BD3AA9700DFE412 /* ClimaxApp Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA2866972BD3AA9800DFE412 /* ClimaxApp Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA2866B92BD3AA9800DFE412 /* Build configuration list for PBXNativeTarget "ClimaxApp Watch AppTests" */;
+			buildPhases = (
+				CA2866942BD3AA9800DFE412 /* Sources */,
+				CA2866952BD3AA9800DFE412 /* Frameworks */,
+				CA2866962BD3AA9800DFE412 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA28669A2BD3AA9800DFE412 /* PBXTargetDependency */,
+			);
+			name = "ClimaxApp Watch AppTests";
+			productName = "ClimaxApp Watch AppTests";
+			productReference = CA2866982BD3AA9800DFE412 /* ClimaxApp Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA2866A12BD3AA9800DFE412 /* ClimaxApp Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA2866BC2BD3AA9800DFE412 /* Build configuration list for PBXNativeTarget "ClimaxApp Watch AppUITests" */;
+			buildPhases = (
+				CA28669E2BD3AA9800DFE412 /* Sources */,
+				CA28669F2BD3AA9800DFE412 /* Frameworks */,
+				CA2866A02BD3AA9800DFE412 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA2866A42BD3AA9800DFE412 /* PBXTargetDependency */,
+			);
+			name = "ClimaxApp Watch AppUITests";
+			productName = "ClimaxApp Watch AppUITests";
+			productReference = CA2866A22BD3AA9800DFE412 /* ClimaxApp Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA2866582BD3AA9400DFE412 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					CA28665F2BD3AA9400DFE412 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					CA28666F2BD3AA9700DFE412 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = CA28665F2BD3AA9400DFE412;
+					};
+					CA2866792BD3AA9700DFE412 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = CA28665F2BD3AA9400DFE412;
+					};
+					CA2866852BD3AA9700DFE412 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					CA2866972BD3AA9800DFE412 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = CA2866852BD3AA9700DFE412;
+					};
+					CA2866A12BD3AA9800DFE412 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = CA2866852BD3AA9700DFE412;
+					};
+				};
+			};
+			buildConfigurationList = CA28665B2BD3AA9400DFE412 /* Build configuration list for PBXProject "ClimaxApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA2866572BD3AA9400DFE412;
+			productRefGroup = CA2866612BD3AA9400DFE412 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA28665F2BD3AA9400DFE412 /* ClimaxApp */,
+				CA28666F2BD3AA9700DFE412 /* ClimaxAppTests */,
+				CA2866792BD3AA9700DFE412 /* ClimaxAppUITests */,
+				CA2866852BD3AA9700DFE412 /* ClimaxApp Watch App */,
+				CA2866972BD3AA9800DFE412 /* ClimaxApp Watch AppTests */,
+				CA2866A12BD3AA9800DFE412 /* ClimaxApp Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA28665E2BD3AA9400DFE412 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA28666B2BD3AA9700DFE412 /* Preview Assets.xcassets in Resources */,
+				CA2866682BD3AA9700DFE412 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA28666E2BD3AA9700DFE412 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2866782BD3AA9700DFE412 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2866842BD3AA9700DFE412 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA2866932BD3AA9800DFE412 /* Preview Assets.xcassets in Resources */,
+				CA2866902BD3AA9800DFE412 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2866962BD3AA9800DFE412 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2866A02BD3AA9800DFE412 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA28665C2BD3AA9400DFE412 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA2866662BD3AA9400DFE412 /* ContentView.swift in Sources */,
+				CA2866642BD3AA9400DFE412 /* ClimaxAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA28666C2BD3AA9700DFE412 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA2866752BD3AA9700DFE412 /* ClimaxAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2866762BD3AA9700DFE412 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA2866812BD3AA9700DFE412 /* ClimaxAppUITestsLaunchTests.swift in Sources */,
+				CA28667F2BD3AA9700DFE412 /* ClimaxAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2866822BD3AA9700DFE412 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA28668E2BD3AA9700DFE412 /* ContentView.swift in Sources */,
+				CA28668C2BD3AA9700DFE412 /* ClimaxAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA2866942BD3AA9800DFE412 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA28669D2BD3AA9800DFE412 /* ClimaxApp_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA28669E2BD3AA9800DFE412 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA2866A92BD3AA9800DFE412 /* ClimaxApp_Watch_AppUITestsLaunchTests.swift in Sources */,
+				CA2866A72BD3AA9800DFE412 /* ClimaxApp_Watch_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA2866722BD3AA9700DFE412 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA28665F2BD3AA9400DFE412 /* ClimaxApp */;
+			targetProxy = CA2866712BD3AA9700DFE412 /* PBXContainerItemProxy */;
+		};
+		CA28667C2BD3AA9700DFE412 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA28665F2BD3AA9400DFE412 /* ClimaxApp */;
+			targetProxy = CA28667B2BD3AA9700DFE412 /* PBXContainerItemProxy */;
+		};
+		CA2866892BD3AA9700DFE412 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA2866852BD3AA9700DFE412 /* ClimaxApp Watch App */;
+			targetProxy = CA2866882BD3AA9700DFE412 /* PBXContainerItemProxy */;
+		};
+		CA28669A2BD3AA9800DFE412 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA2866852BD3AA9700DFE412 /* ClimaxApp Watch App */;
+			targetProxy = CA2866992BD3AA9800DFE412 /* PBXContainerItemProxy */;
+		};
+		CA2866A42BD3AA9800DFE412 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA2866852BD3AA9700DFE412 /* ClimaxApp Watch App */;
+			targetProxy = CA2866A32BD3AA9800DFE412 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CA2866AA2BD3AA9800DFE412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA2866AB2BD3AA9800DFE412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CA2866AD2BD3AA9800DFE412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ClimaxApp Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = BK7MB9J3TD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ClimaxApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.christen.ClimaxApp;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christen.ClimaxApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Debug;
+		};
+		CA2866AE2BD3AA9800DFE412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ClimaxApp Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = BK7MB9J3TD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ClimaxApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.christen.ClimaxApp;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christen.ClimaxApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Release;
+		};
+		CA2866B12BD3AA9800DFE412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ClimaxApp/Preview Content\"";
+				DEVELOPMENT_TEAM = BK7MB9J3TD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ClimaxApp;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christen.ClimaxApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA2866B22BD3AA9800DFE412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ClimaxApp/Preview Content\"";
+				DEVELOPMENT_TEAM = BK7MB9J3TD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ClimaxApp;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christen.ClimaxApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA2866B42BD3AA9800DFE412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BK7MB9J3TD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christen.ClimaxAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClimaxApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ClimaxApp";
+			};
+			name = Debug;
+		};
+		CA2866B52BD3AA9800DFE412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BK7MB9J3TD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christen.ClimaxAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClimaxApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ClimaxApp";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA2866B72BD3AA9800DFE412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BK7MB9J3TD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christen.ClimaxAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ClimaxApp;
+			};
+			name = Debug;
+		};
+		CA2866B82BD3AA9800DFE412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BK7MB9J3TD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.christen.ClimaxAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ClimaxApp;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA2866BA2BD3AA9800DFE412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BK7MB9J3TD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.christen.ClimaxApp-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClimaxApp Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ClimaxApp Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Debug;
+		};
+		CA2866BB2BD3AA9800DFE412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BK7MB9J3TD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.christen.ClimaxApp-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClimaxApp Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ClimaxApp Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Release;
+		};
+		CA2866BD2BD3AA9800DFE412 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BK7MB9J3TD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.christen.ClimaxApp-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "ClimaxApp Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Debug;
+		};
+		CA2866BE2BD3AA9800DFE412 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BK7MB9J3TD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.christen.ClimaxApp-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "ClimaxApp Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA28665B2BD3AA9400DFE412 /* Build configuration list for PBXProject "ClimaxApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA2866AA2BD3AA9800DFE412 /* Debug */,
+				CA2866AB2BD3AA9800DFE412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA2866AC2BD3AA9800DFE412 /* Build configuration list for PBXNativeTarget "ClimaxApp Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA2866AD2BD3AA9800DFE412 /* Debug */,
+				CA2866AE2BD3AA9800DFE412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA2866B02BD3AA9800DFE412 /* Build configuration list for PBXNativeTarget "ClimaxApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA2866B12BD3AA9800DFE412 /* Debug */,
+				CA2866B22BD3AA9800DFE412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA2866B32BD3AA9800DFE412 /* Build configuration list for PBXNativeTarget "ClimaxAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA2866B42BD3AA9800DFE412 /* Debug */,
+				CA2866B52BD3AA9800DFE412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA2866B62BD3AA9800DFE412 /* Build configuration list for PBXNativeTarget "ClimaxAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA2866B72BD3AA9800DFE412 /* Debug */,
+				CA2866B82BD3AA9800DFE412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA2866B92BD3AA9800DFE412 /* Build configuration list for PBXNativeTarget "ClimaxApp Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA2866BA2BD3AA9800DFE412 /* Debug */,
+				CA2866BB2BD3AA9800DFE412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA2866BC2BD3AA9800DFE412 /* Build configuration list for PBXNativeTarget "ClimaxApp Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA2866BD2BD3AA9800DFE412 /* Debug */,
+				CA2866BE2BD3AA9800DFE412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA2866582BD3AA9400DFE412 /* Project object */;
+}
