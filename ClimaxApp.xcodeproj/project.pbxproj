@@ -34,6 +34,9 @@
 		CA2866D72BD3B0F600DFE412 /* WatchConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2866D62BD3B0F600DFE412 /* WatchConnect.swift */; };
 		CA2866DA2BD3B1AB00DFE412 /* iOSConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2866D92BD3B1AB00DFE412 /* iOSConnect.swift */; };
 		CA2866DD2BD3B72E00DFE412 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2866DC2BD3B72E00DFE412 /* WatchConnectivity.framework */; };
+		CA2866E02BD4277500DFE412 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2866DF2BD4277500DFE412 /* HealthKitManager.swift */; };
+		CA2866E52BD4412400DFE412 /* MockHeartRateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2866E42BD4412400DFE412 /* MockHeartRateManager.swift */; };
+		CA2866E72BD4452900DFE412 /* FirebaseHeartRateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2866E62BD4452900DFE412 /* FirebaseHeartRateManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +120,12 @@
 		CA2866D62BD3B0F600DFE412 /* WatchConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnect.swift; sourceTree = "<group>"; };
 		CA2866D92BD3B1AB00DFE412 /* iOSConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSConnect.swift; sourceTree = "<group>"; };
 		CA2866DC2BD3B72E00DFE412 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.4.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		CA2866DF2BD4277500DFE412 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		CA2866E12BD42C1800DFE412 /* ClimaxApp-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ClimaxApp-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		CA2866E22BD42C9900DFE412 /* ClimaxApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClimaxApp.entitlements; sourceTree = "<group>"; };
+		CA2866E32BD42CA200DFE412 /* ClimaxApp Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ClimaxApp Watch App.entitlements"; sourceTree = "<group>"; };
+		CA2866E42BD4412400DFE412 /* MockHeartRateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHeartRateManager.swift; sourceTree = "<group>"; };
+		CA2866E62BD4452900DFE412 /* FirebaseHeartRateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHeartRateManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +209,7 @@
 		CA2866622BD3AA9400DFE412 /* ClimaxApp */ = {
 			isa = PBXGroup;
 			children = (
+				CA2866E22BD42C9900DFE412 /* ClimaxApp.entitlements */,
 				CA2866D52BD3B0E600DFE412 /* Watch */,
 				CA2866D32BD3AC3800DFE412 /* GoogleService-Info.plist */,
 				CA2866D02BD3AB8200DFE412 /* ViewModels */,
@@ -241,6 +251,9 @@
 		CA28668A2BD3AA9700DFE412 /* ClimaxApp Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				CA2866E32BD42CA200DFE412 /* ClimaxApp Watch App.entitlements */,
+				CA2866E12BD42C1800DFE412 /* ClimaxApp-Watch-App-Info.plist */,
+				CA2866DE2BD4276700DFE412 /* HealthKit */,
 				CA2866D82BD3B1A100DFE412 /* iOS */,
 				CA28668B2BD3AA9700DFE412 /* ClimaxAppApp.swift */,
 				CA28668D2BD3AA9700DFE412 /* ContentView.swift */,
@@ -279,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				CA2866C92BD3AB2B00DFE412 /* Firestore.swift */,
+				CA2866E62BD4452900DFE412 /* FirebaseHeartRateManager.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -322,6 +336,15 @@
 				CA2866DC2BD3B72E00DFE412 /* WatchConnectivity.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA2866DE2BD4276700DFE412 /* HealthKit */ = {
+			isa = PBXGroup;
+			children = (
+				CA2866DF2BD4277500DFE412 /* HealthKitManager.swift */,
+				CA2866E42BD4412400DFE412 /* MockHeartRateManager.swift */,
+			);
+			path = HealthKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -561,6 +584,7 @@
 				CA2866662BD3AA9400DFE412 /* ContentView.swift in Sources */,
 				CA2866D22BD3AB9A00DFE412 /* User.swift in Sources */,
 				CA2866642BD3AA9400DFE412 /* ClimaxAppApp.swift in Sources */,
+				CA2866E72BD4452900DFE412 /* FirebaseHeartRateManager.swift in Sources */,
 				CA2866CD2BD3AB4700DFE412 /* LoginView.swift in Sources */,
 				CA2866CA2BD3AB2B00DFE412 /* Firestore.swift in Sources */,
 			);
@@ -587,9 +611,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA2866E02BD4277500DFE412 /* HealthKitManager.swift in Sources */,
 				CA2866DA2BD3B1AB00DFE412 /* iOSConnect.swift in Sources */,
 				CA28668E2BD3AA9700DFE412 /* ContentView.swift in Sources */,
 				CA28668C2BD3AA9700DFE412 /* ClimaxAppApp.swift in Sources */,
+				CA2866E52BD4412400DFE412 /* MockHeartRateManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,6 +725,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Debug;
 		};
@@ -752,6 +779,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;
 		};
@@ -760,15 +788,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ClimaxApp Watch App/ClimaxApp Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ClimaxApp Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = BK7MB9J3TD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ClimaxApp-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = ClimaxApp;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Climax needs your heart rate to track excitement levels!";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Climax needs your heart rate to track excitement levels!";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.christen.ClimaxApp;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -781,7 +814,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Debug;
 		};
@@ -790,15 +823,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ClimaxApp Watch App/ClimaxApp Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ClimaxApp Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = BK7MB9J3TD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ClimaxApp-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = ClimaxApp;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Climax needs your heart rate to track excitement levels!";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Climax needs your heart rate to track excitement levels!";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.christen.ClimaxApp;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -812,7 +850,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;
 		};
@@ -822,6 +860,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ClimaxApp/ClimaxApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ClimaxApp/Preview Content\"";
@@ -829,6 +868,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = ClimaxApp;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Climax needs your heart rate to track excitement levels!";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Climax needs your heart rate to track excitement levels!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -855,6 +896,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ClimaxApp/ClimaxApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ClimaxApp/Preview Content\"";
@@ -862,6 +904,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = ClimaxApp;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Climax needs your heart rate to track excitement levels!";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Climax needs your heart rate to track excitement levels!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

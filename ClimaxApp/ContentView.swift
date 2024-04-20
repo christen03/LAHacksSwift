@@ -12,8 +12,8 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            if let user = viewModel.user {
-                LoggedInView(user: user)
+            if viewModel.user != nil {
+                LoggedInView(userViewModel: viewModel)
             } else {
                 // Show the login view
                 LoginView(viewModel: viewModel)

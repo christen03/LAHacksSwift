@@ -34,4 +34,45 @@ final class FirebaseLoginData {
             return nil
         }
     }
+    
+    func watchUserRoom(userID: String, completion: @escaping (String?) -> Void) {
+        let userDocument = db.collection("accounts").document(userID)
+        
+        userDocument.addSnapshotListener { documentSnapshot, error in
+            guard let document = documentSnapshot else {
+                print("Error fetching document: \(error!)")
+                completion(nil)
+                return
+            }
+            
+            guard let data = document.data() else {
+                print("Document data was empty.")
+                completion(nil)
+                return
+            }
+            
+            if let room = data["room"] as? String {
+                completion(room)
+            } else {
+                completion(nil)
+            }
+        }
+    }
+    
+    func getRoomForUser(roomID: String) async -> RoomModel? {
+        do {
+            let documentSnapshot = try await db.collection("rooms").document(roomID).getDocument()
+            
+            if let data = documentSnapshot.data(),
+               let roomName = data["name"] as? String {
+                let room = RoomModel(roomID: documentSnapshot.documentID, roomName: roomName)
+                return room
+            } else {
+                return RoomModel(roomID: documentSnapshot.documentID, roomName: "Unnamed Room")
+            }
+        } catch {
+            print("Error getting room: \(error)")
+            return nil
+        }
+    }
 }

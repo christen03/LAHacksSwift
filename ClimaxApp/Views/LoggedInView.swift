@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct LoggedInView: View {
-    let user: UserModel
-    let watchConnector = WatchConnect()
+    let firebaseLoginData = FirebaseLoginData()
+    let userViewModel: UserViewModel
+    @StateObject var watchConnector: WatchConnect
+    
+    init(userViewModel: UserViewModel) {
+        self.userViewModel = userViewModel
+        self._watchConnector = StateObject(wrappedValue: WatchConnect(user: userViewModel))
+    }
     
     var body: some View {
-            
+        if let user=userViewModel.user{
             VStack {
                 Text("Welcome, \(user.name)!")
                     .font(.largeTitle)
@@ -39,33 +45,55 @@ struct LoggedInView: View {
                 }
                 
                 Text(watchConnector.isConnected ? "Watch Connected" : "Connect Watch")
-                                    .font(.headline)
-                                    .foregroundColor(.white)
-                                    .padding()
-                                    .frame(maxWidth: .infinity)
-                                    .background(watchConnector.isConnected ? Color.green : Color.blue)
-                                    .cornerRadius(10)
-                .padding()
-       if let heartRate = watchConnector.currentHeartRate {
-    HStack {
-        Image(systemName: "heart.fill")
-            .foregroundColor(.red)
-            .scaleEffect(watchConnector.isConnected ? 1.2 : 1.0)
-            .animation(
-                .easeInOut(duration: 60.0 / Double(heartRate) / 2)
-                .repeatForever(autoreverses: true),
-                value: watchConnector.currentHeartRate
-            )
-        Text("\(heartRate) BPM")
-            .foregroundColor(.white)
-            .font(.headline)
-    }
-    .padding()
-}
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(watchConnector.isConnected ? Color.green : Color.blue)
+                    .cornerRadius(10)
+                    .padding()
+                if let heartRate = watchConnector.currentHeartRate {
+                    HStack {
+                        Image(systemName: "heart.fill")
+                            .foregroundColor(.red)
+                            .scaleEffect(watchConnector.isConnected ? 1.2 : 1.0)
+                            .animation(
+                                .easeInOut(duration: 60.0 / Double(heartRate) / 2)
+                                .repeatForever(autoreverses: true),
+                                value: watchConnector.currentHeartRate
+                            )
+                        Text("\(heartRate) BPM")
+                            .foregroundColor(.white)
+                            .font(.headline)
+                    }
+                    .padding()
+                }
+                if (userViewModel.room==nil) {
+                    Text("Currently not in a room")
+                } else{
+                    Text("In Room \(userViewModel.room?.roomName ?? "")")
+                }
                 
                 Spacer()
+                
             }
+            .onAppear{
+                firebaseLoginData.watchUserRoom(userID: user.userID) { room in
+                    if let room = room {
+                        userViewModel.joinRoom(roomID: room)
+                        { roomName in
+                            watchConnector.sendRoomNameToWatchOS(roomName: roomName)
+                        }
+                    } else {
+                        print("User's room is not available")
+                    }
+                }
+            }
+            
             .padding()
         }
-    
+        else{
+            Text("No user found!")
+        }
+    }
 }

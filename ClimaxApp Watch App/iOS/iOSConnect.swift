@@ -12,6 +12,7 @@ import WatchConnectivity
 class iOSConnect: NSObject, ObservableObject, WCSessionDelegate {
     
     var session: WCSession;
+    @Published var roomName: String?
     
     init(session: WCSession = .default) {
         self.session = session
@@ -23,6 +24,17 @@ class iOSConnect: NSObject, ObservableObject, WCSessionDelegate {
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         if session.isReachable {
             print("Watch session is reachable")
+        }
+    }
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
+        
+        if let roomName = message["roomName"] as? String {
+            Task{
+                await MainActor.run{
+                    self.roomName = roomName
+                }
+            }
         }
     }
     

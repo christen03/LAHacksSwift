@@ -7,31 +7,65 @@
 
 import SwiftUI
 import WatchConnectivity
+import HealthKit
 
 struct ContentView: View {
     @StateObject private var connector = iOSConnect()
+    private let healthStore = HKHealthStore()
+    private let healthKitManager = HealthKitManager()
+    private let mockHeartRateManager = MockHeartRateManager()
     
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-            
+            if let roomName = connector.roomName {
+                    Text("Currently in room: \(roomName)")
+            } else{
+                Text("Not in a room!")
+                
+            }
             Button(action: {
-                connector.sendDataToiOS(heartRate: 120)
+                //startSendingHeartRate()
+                startSendingMockHeartRate()
             }) {
-                Text("Send Dummy Heart Rate")
+                Text("Send Live Heart Rate")
                     .foregroundColor(.white)
                     .padding()
                     .background(Color.blue)
                     .cornerRadius(10)
+                    .disabled(connector.roomName == nil)
             }
         }
         .padding()
+        .onAppear {
+            requestHealthAuthorization()
+        }
+    }
+    
+    
+    private func requestHealthAuthorization() {
+        healthKitManager.requestHealthAuthorization { success, error in
+            if let error = error {
+                print("Error requesting HealthKit authorization: \(error.localizedDescription)")
+            } else {
+                print("HealthKit authorization request was successful")
+            }
+        }
+    }
+    
+    private func startSendingHeartRate() {
+        healthKitManager.startObservingHeartRate { heartRate in
+            connector.sendDataToiOS(heartRate: heartRate)
+        }
+    }
+    
+    private func startSendingMockHeartRate() {
+        mockHeartRateManager.startGeneratingMockHeartRate { heartRate in
+            connector.sendDataToiOS(heartRate: heartRate)
+        }
+        
     }
 }
-
+//
 #Preview {
     ContentView()
 }
