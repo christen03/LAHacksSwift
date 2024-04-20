@@ -8,14 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel = UserViewModel()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            if let user = viewModel.user {
+                LoggedInView(user: user)
+            } else {
+                // Show the login view
+                LoginView(viewModel: viewModel)
+            }
         }
         .padding()
+    }
+}
+
+
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
 

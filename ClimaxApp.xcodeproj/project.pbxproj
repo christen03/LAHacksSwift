@@ -22,6 +22,18 @@
 		CA28669D2BD3AA9800DFE412 /* ClimaxApp_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA28669C2BD3AA9800DFE412 /* ClimaxApp_Watch_AppTests.swift */; };
 		CA2866A72BD3AA9800DFE412 /* ClimaxApp_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2866A62BD3AA9800DFE412 /* ClimaxApp_Watch_AppUITests.swift */; };
 		CA2866A92BD3AA9800DFE412 /* ClimaxApp_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2866A82BD3AA9800DFE412 /* ClimaxApp_Watch_AppUITestsLaunchTests.swift */; };
+		CA2866C12BD3AB1400DFE412 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CA2866C02BD3AB1400DFE412 /* FirebaseAuth */; };
+		CA2866C32BD3AB1400DFE412 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CA2866C22BD3AB1400DFE412 /* FirebaseFirestore */; };
+		CA2866C52BD3AB1400DFE412 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA2866C42BD3AB1400DFE412 /* FirebaseFirestoreSwift */; };
+		CA2866C72BD3AB1400DFE412 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CA2866C62BD3AB1400DFE412 /* FirebaseStorage */; };
+		CA2866CA2BD3AB2B00DFE412 /* Firestore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2866C92BD3AB2B00DFE412 /* Firestore.swift */; };
+		CA2866CD2BD3AB4700DFE412 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2866CC2BD3AB4700DFE412 /* LoginView.swift */; };
+		CA2866CF2BD3AB5C00DFE412 /* LoggedInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2866CE2BD3AB5C00DFE412 /* LoggedInView.swift */; };
+		CA2866D22BD3AB9A00DFE412 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2866D12BD3AB9A00DFE412 /* User.swift */; };
+		CA2866D42BD3AC3800DFE412 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA2866D32BD3AC3800DFE412 /* GoogleService-Info.plist */; };
+		CA2866D72BD3B0F600DFE412 /* WatchConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2866D62BD3B0F600DFE412 /* WatchConnect.swift */; };
+		CA2866DA2BD3B1AB00DFE412 /* iOSConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2866D92BD3B1AB00DFE412 /* iOSConnect.swift */; };
+		CA2866DD2BD3B72E00DFE412 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA2866DC2BD3B72E00DFE412 /* WatchConnectivity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +109,14 @@
 		CA2866A22BD3AA9800DFE412 /* ClimaxApp Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ClimaxApp Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA2866A62BD3AA9800DFE412 /* ClimaxApp_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaxApp_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		CA2866A82BD3AA9800DFE412 /* ClimaxApp_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimaxApp_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CA2866C92BD3AB2B00DFE412 /* Firestore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firestore.swift; sourceTree = "<group>"; };
+		CA2866CC2BD3AB4700DFE412 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CA2866CE2BD3AB5C00DFE412 /* LoggedInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInView.swift; sourceTree = "<group>"; };
+		CA2866D12BD3AB9A00DFE412 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CA2866D32BD3AC3800DFE412 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CA2866D62BD3B0F600DFE412 /* WatchConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnect.swift; sourceTree = "<group>"; };
+		CA2866D92BD3B1AB00DFE412 /* iOSConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSConnect.swift; sourceTree = "<group>"; };
+		CA2866DC2BD3B72E00DFE412 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.4.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +124,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA2866C12BD3AB1400DFE412 /* FirebaseAuth in Frameworks */,
+				CA2866C72BD3AB1400DFE412 /* FirebaseStorage in Frameworks */,
+				CA2866C32BD3AB1400DFE412 /* FirebaseFirestore in Frameworks */,
+				CA2866C52BD3AB1400DFE412 /* FirebaseFirestoreSwift in Frameworks */,
+				CA2866DD2BD3B72E00DFE412 /* WatchConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +180,7 @@
 				CA28669B2BD3AA9800DFE412 /* ClimaxApp Watch AppTests */,
 				CA2866A52BD3AA9800DFE412 /* ClimaxApp Watch AppUITests */,
 				CA2866612BD3AA9400DFE412 /* Products */,
+				CA2866DB2BD3B72D00DFE412 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,6 +200,11 @@
 		CA2866622BD3AA9400DFE412 /* ClimaxApp */ = {
 			isa = PBXGroup;
 			children = (
+				CA2866D52BD3B0E600DFE412 /* Watch */,
+				CA2866D32BD3AC3800DFE412 /* GoogleService-Info.plist */,
+				CA2866D02BD3AB8200DFE412 /* ViewModels */,
+				CA2866CB2BD3AB3B00DFE412 /* Views */,
+				CA2866C82BD3AB1D00DFE412 /* Firebase */,
 				CA2866632BD3AA9400DFE412 /* ClimaxAppApp.swift */,
 				CA2866652BD3AA9400DFE412 /* ContentView.swift */,
 				CA2866672BD3AA9700DFE412 /* Assets.xcassets */,
@@ -210,6 +241,7 @@
 		CA28668A2BD3AA9700DFE412 /* ClimaxApp Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				CA2866D82BD3B1A100DFE412 /* iOS */,
 				CA28668B2BD3AA9700DFE412 /* ClimaxAppApp.swift */,
 				CA28668D2BD3AA9700DFE412 /* ContentView.swift */,
 				CA28668F2BD3AA9800DFE412 /* Assets.xcassets */,
@@ -243,6 +275,55 @@
 			path = "ClimaxApp Watch AppUITests";
 			sourceTree = "<group>";
 		};
+		CA2866C82BD3AB1D00DFE412 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				CA2866C92BD3AB2B00DFE412 /* Firestore.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		CA2866CB2BD3AB3B00DFE412 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA2866CC2BD3AB4700DFE412 /* LoginView.swift */,
+				CA2866CE2BD3AB5C00DFE412 /* LoggedInView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CA2866D02BD3AB8200DFE412 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CA2866D12BD3AB9A00DFE412 /* User.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CA2866D52BD3B0E600DFE412 /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				CA2866D62BD3B0F600DFE412 /* WatchConnect.swift */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		CA2866D82BD3B1A100DFE412 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CA2866D92BD3B1AB00DFE412 /* iOSConnect.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		CA2866DB2BD3B72D00DFE412 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA2866DC2BD3B72E00DFE412 /* WatchConnectivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -261,6 +342,12 @@
 				CA2866892BD3AA9700DFE412 /* PBXTargetDependency */,
 			);
 			name = ClimaxApp;
+			packageProductDependencies = (
+				CA2866C02BD3AB1400DFE412 /* FirebaseAuth */,
+				CA2866C22BD3AB1400DFE412 /* FirebaseFirestore */,
+				CA2866C42BD3AB1400DFE412 /* FirebaseFirestoreSwift */,
+				CA2866C62BD3AB1400DFE412 /* FirebaseStorage */,
+			);
 			productName = ClimaxApp;
 			productReference = CA2866602BD3AA9400DFE412 /* ClimaxApp.app */;
 			productType = "com.apple.product-type.application";
@@ -397,6 +484,9 @@
 				Base,
 			);
 			mainGroup = CA2866572BD3AA9400DFE412;
+			packageReferences = (
+				CA2866BF2BD3AB1400DFE412 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = CA2866612BD3AA9400DFE412 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -418,6 +508,7 @@
 			files = (
 				CA28666B2BD3AA9700DFE412 /* Preview Assets.xcassets in Resources */,
 				CA2866682BD3AA9700DFE412 /* Assets.xcassets in Resources */,
+				CA2866D42BD3AC3800DFE412 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,8 +556,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA2866D72BD3B0F600DFE412 /* WatchConnect.swift in Sources */,
+				CA2866CF2BD3AB5C00DFE412 /* LoggedInView.swift in Sources */,
 				CA2866662BD3AA9400DFE412 /* ContentView.swift in Sources */,
+				CA2866D22BD3AB9A00DFE412 /* User.swift in Sources */,
 				CA2866642BD3AA9400DFE412 /* ClimaxAppApp.swift in Sources */,
+				CA2866CD2BD3AB4700DFE412 /* LoginView.swift in Sources */,
+				CA2866CA2BD3AB2B00DFE412 /* Firestore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +587,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA2866DA2BD3B1AB00DFE412 /* iOSConnect.swift in Sources */,
 				CA28668E2BD3AA9700DFE412 /* ContentView.swift in Sources */,
 				CA28668C2BD3AA9700DFE412 /* ClimaxAppApp.swift in Sources */,
 			);
@@ -1021,6 +1118,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CA2866BF2BD3AB1400DFE412 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.24.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA2866C02BD3AB1400DFE412 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA2866BF2BD3AB1400DFE412 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		CA2866C22BD3AB1400DFE412 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA2866BF2BD3AB1400DFE412 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		CA2866C42BD3AB1400DFE412 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA2866BF2BD3AB1400DFE412 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		CA2866C62BD3AB1400DFE412 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA2866BF2BD3AB1400DFE412 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CA2866582BD3AA9400DFE412 /* Project object */;
 }
