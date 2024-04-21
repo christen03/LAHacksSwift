@@ -51,7 +51,7 @@ final class FirebaseLoginData {
                 return
             }
             
-            if let room = data["room"] as? String {
+            if let room = data["roomId"] as? String {
                 completion(room)
             } else {
                 completion(nil)
@@ -62,7 +62,6 @@ final class FirebaseLoginData {
     func getRoomForUser(roomID: String) async -> RoomModel? {
         do {
             let documentSnapshot = try await db.collection("rooms").document(roomID).getDocument()
-            
             if let data = documentSnapshot.data(),
                let roomName = data["name"] as? String {
                 let room = RoomModel(roomID: documentSnapshot.documentID, roomName: roomName)

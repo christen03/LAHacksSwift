@@ -13,7 +13,8 @@ struct ContentView: View {
     @StateObject private var connector = iOSConnect()
     private let healthStore = HKHealthStore()
     private let healthKitManager = HealthKitManager()
-    private let mockHeartRateManager = MockHeartRateManager()
+    @State var currentHeartRate = 0
+    @StateObject private var mockHeartRateManager = MockHeartRateManager()
     
     var body: some View {
         VStack {
@@ -23,17 +24,28 @@ struct ContentView: View {
                 Text("Not in a room!")
                 
             }
-            Button(action: {
-                //startSendingHeartRate()
-                startSendingMockHeartRate()
-            }) {
-                Text("Send Live Heart Rate")
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.blue)
-                    .cornerRadius(10)
-                    .disabled(connector.roomName == nil)
+            if(mockHeartRateManager.isSendingHeartRate){
+                HStack {
+                    Image(systemName: "heart.fill")
+                        .foregroundColor(.red)
+                    Text("\(self.currentHeartRate) BPM")
+                        .foregroundColor(.white)
+                        .font(.headline)
+                }
+            }else{
+                Button(action: {
+                        startSendingMockHeartRate()
+                    // startSendingHeartRate()
+                }) {
+                    Text("Send Live Heart Rate")
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                        .disabled(connector.roomName == nil)
+                }
             }
+       
         }
         .padding()
         .onAppear {
@@ -54,12 +66,14 @@ struct ContentView: View {
     
     private func startSendingHeartRate() {
         healthKitManager.startObservingHeartRate { heartRate in
+            self.currentHeartRate = heartRate
             connector.sendDataToiOS(heartRate: heartRate)
         }
     }
     
     private func startSendingMockHeartRate() {
         mockHeartRateManager.startGeneratingMockHeartRate { heartRate in
+            self.currentHeartRate = heartRate
             connector.sendDataToiOS(heartRate: heartRate)
         }
         

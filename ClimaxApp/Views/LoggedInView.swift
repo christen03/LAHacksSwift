@@ -54,19 +54,25 @@ struct LoggedInView: View {
                     .padding()
                 if let heartRate = watchConnector.currentHeartRate {
                     HStack {
-                        Image(systemName: "heart.fill")
-                            .foregroundColor(.red)
-                            .scaleEffect(watchConnector.isConnected ? 1.2 : 1.0)
-                            .animation(
-                                .easeInOut(duration: 60.0 / Double(heartRate) / 2)
-                                .repeatForever(autoreverses: true),
-                                value: watchConnector.currentHeartRate
-                            )
-                        Text("\(heartRate) BPM")
-                            .foregroundColor(.white)
-                            .font(.headline)
-                    }
+                           Image(systemName: "heart.fill")
+                               .foregroundColor(.red)
+                               .scaleEffect(watchConnector.isPulsing ? 1.2 : 1.0)
+                               .animation(
+                                   .easeInOut(duration: 60.0 / Double(heartRate))
+                                   .repeatForever(),
+                                   value: watchConnector.isPulsing
+                               )
+                               .onAppear {
+                                   watchConnector.isPulsing.toggle()
+                               }
+                           
+                           Text("\(heartRate) BPM")
+                               .foregroundColor(.white)
+                               .font(.headline)
+                       }
                     .padding()
+                    
+                    
                 }
                 if (userViewModel.room==nil) {
                     Text("Currently not in a room")
@@ -85,7 +91,7 @@ struct LoggedInView: View {
                             watchConnector.sendRoomNameToWatchOS(roomName: roomName)
                         }
                     } else {
-                        print("User's room is not available")
+                        print("No room found")
                     }
                 }
             }

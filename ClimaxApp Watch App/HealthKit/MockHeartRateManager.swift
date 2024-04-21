@@ -6,12 +6,19 @@
 //
 
 import Foundation
-
-class MockHeartRateManager {
+import SwiftUI
+class MockHeartRateManager: ObservableObject {
     private var timer: Timer?
     private var onHeartRateUpdate: ((Int) -> Void)?
+    @Published var isSendingHeartRate = false
+    @Published var currentHeartRate = 0
+    private var scaryMomentChance: Double = 0.1
+    private var scaryMomentDuration: Int = 7
+    private var scaryMomentStartTime: Date?
+
     
     func startGeneratingMockHeartRate(onUpdate: @escaping (Int) -> Void) {
+        isSendingHeartRate = true
         onHeartRateUpdate = onUpdate
         
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
@@ -27,6 +34,23 @@ class MockHeartRateManager {
     }
     
     private func generateRandomHeartRate() -> Int {
-        return Int.random(in: 60...100)
-    }
+            if scaryMomentStartTime == nil {
+                if Double.random(in: 0...1) < scaryMomentChance {
+                    scaryMomentStartTime = Date()
+                }
+            } else {
+                let currentTime = Date()
+                let elapsedTime = Int(currentTime.timeIntervalSince(scaryMomentStartTime!))
+                
+                if elapsedTime < scaryMomentDuration {
+                    return Int.random(in: 120...130)
+                } else {
+                    scaryMomentStartTime = nil
+                }
+            }
+            
+            return Int.random(in: 60...80)
+        }
+    
 }
+

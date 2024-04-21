@@ -15,6 +15,7 @@ class WatchConnect: NSObject, ObservableObject, WCSessionDelegate {
     let firebaseHeartRateManager: FirebaseHeartRateManager
     @Published var isConnected = false
     @Published var currentHeartRate: Int? = nil
+    @Published var isPulsing = false
     
     init(session: WCSession = WCSession.default, user: UserViewModel) {
         self.userViewModel=user
@@ -56,9 +57,17 @@ class WatchConnect: NSObject, ObservableObject, WCSessionDelegate {
                 await MainActor.run{
                     self.currentHeartRate = heartRate
                 }
-                await self.firebaseHeartRateManager.writeHeartRateToFirestore(heartRate: heartRate)
             }
-        }
+            DispatchQueue.global(qos: .userInitiated).async {
+                        self.firebaseHeartRateManager.writeHeartRateToFirestore(heartRate: heartRate) { error in
+                            if let error = error {
+                                print("Error writing heart rate to Firestore: \(error.localizedDescription)")
+                            } else {
+                                print("Heart rate successfully written to Firestore")
+                            }
+                        }
+                    }
+        } 
     }
     
     func sendRoomNameToWatchOS(roomName: String) {
@@ -67,6 +76,18 @@ class WatchConnect: NSObject, ObservableObject, WCSessionDelegate {
             print("Error sending message: \(error.localizedDescription)")
         }
         print("Sent message to iOS")
+    }
+    
+    func stopTracking() {
+        session.sendMessage(["stopTracking": true], replyHandler: nil) { error in
+            print("Error sending message: \(error.localizedDescription)")
+        }
+    }
+    
+    func startTracking() {
+        session.sendMessage(["startTracking": true], replyHandler: nil) { error in
+            print("Error sending message: \(error.localizedDescription)")
+        }
     }
     
 }

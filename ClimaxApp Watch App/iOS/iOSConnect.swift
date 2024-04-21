@@ -29,12 +29,19 @@ class iOSConnect: NSObject, ObservableObject, WCSessionDelegate {
     
     func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
         
-        if let roomName = message["roomName"] as? String {
+        if let newRoomName = message["roomName"] as? String? {
             Task{
+//                if roomName == "" {
+//                    roomName = nil
+//                }
                 await MainActor.run{
                     self.roomName = roomName
                 }
             }
+        }
+        if let stopTracking = message["stopTracking"] as? Bool {
+                
+            
         }
     }
     

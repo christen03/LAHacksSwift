@@ -66,6 +66,7 @@ class HealthKitManager: NSObject{
 
                 let heartRateUnit = HKUnit(from: "count/min")
                 let heartRate = Int(heartRateSample.quantity.doubleValue(for: heartRateUnit))
+                print("Heart Rate: \(heartRate)")
                 completion(heartRate)
             }
 
