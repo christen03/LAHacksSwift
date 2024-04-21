@@ -36,5 +36,51 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "611A94BE-AEE2-4B33-87A1-B196839B8A63"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ClimaxApp Watch App/iOS/iOSConnect.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "session(_:didReceiveMessage:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "611A94BE-AEE2-4B33-87A1-B196839B8A63 - 2b5cc2158348d81e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ClimaxApp_Watch_App.iOSConnect.session(_: __C.WCSession, didReceiveMessage: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "ClimaxApp Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/christenxie/Documents/GitHub/ClimaxApp/ClimaxApp%20Watch%20App/iOS/iOSConnect.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32">
+               </Location>
+               <Location
+                  uuid = "611A94BE-AEE2-4B33-87A1-B196839B8A63 - 2b5cc2158348d81e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ClimaxApp_Watch_App.iOSConnect.session(_: __C.WCSession, didReceiveMessage: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "ClimaxApp Watch App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/christenxie/Documents/GitHub/ClimaxApp/ClimaxApp%20Watch%20App/iOS/iOSConnect.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

@@ -31,17 +31,10 @@ class iOSConnect: NSObject, ObservableObject, WCSessionDelegate {
         
         if let newRoomName = message["roomName"] as? String? {
             Task{
-//                if roomName == "" {
-//                    roomName = nil
-//                }
                 await MainActor.run{
-                    self.roomName = roomName
+                    self.roomName = newRoomName == "" ? nil : newRoomName
                 }
             }
-        }
-        if let stopTracking = message["stopTracking"] as? Bool {
-                
-            
         }
     }
     

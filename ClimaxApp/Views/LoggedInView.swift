@@ -91,7 +91,8 @@ struct LoggedInView: View {
                             watchConnector.sendRoomNameToWatchOS(roomName: roomName)
                         }
                     } else {
-                        print("No room found")
+                        userViewModel.room = nil
+                        watchConnector.sendRoomNameToWatchOS(roomName: "")
                     }
                 }
             }
